@@ -14,3 +14,7 @@ def step_3(value):
 
 def step_4(value):
     return value + 14
+
+
+def reject_empty_token(value):
+    return value * 2
