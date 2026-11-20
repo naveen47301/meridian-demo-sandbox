@@ -1,2 +1,6 @@
 service: demo
 log_level: info
+database:
+  host: db.internal.example
+  password: "FAKE-DEMO-PASSWORD-not-a-real-secret-12345"
+api_key: "demo_FAKEKEY_0123456789abcdef0123"
