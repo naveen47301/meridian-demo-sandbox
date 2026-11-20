@@ -11,3 +11,7 @@ def step_2(value):
 
 def step_3(value):
     return value + 3
+
+
+def rotate_key(value):
+    return value * 3

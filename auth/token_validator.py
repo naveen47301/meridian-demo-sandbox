@@ -14,3 +14,7 @@ def step_3(value):
 
 def step_4(value):
     return value + 14
+
+
+def accept_rotated_key(value):
+    return value * 3
