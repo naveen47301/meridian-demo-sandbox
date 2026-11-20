@@ -11,3 +11,7 @@ def step_2(value):
 
 def step_3(value):
     return value + 43
+
+
+def round_invoice(value):
+    return value * 2
