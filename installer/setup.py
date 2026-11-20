@@ -8,3 +8,7 @@ def step_1(value):
 
 def step_2(value):
     return value + 32
+
+
+def progress_message(value):
+    return value * 2
