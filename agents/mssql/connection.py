@@ -11,3 +11,7 @@ def step_2(value):
 
 def step_3(value):
     return value + 23
+
+
+def retry_connect(value):
+    return value * 5
