@@ -1,0 +1,38 @@
+# meridian.yaml - DRAFT policy (version 0). Schema and validation are owned by Sub-task 3.
+version: 0
+components:
+  - path: agents/mssql/
+    component: MSSQL Agent
+    team: MSSQL Agent Team
+    owners: [suchitra-shelke]
+  - path: installer/
+    component: Installer
+    team: Installer Team
+    owners: [naveen47301]
+  - path: auth/
+    component: Authentication
+    team: Platform Security
+    owners: [naveen47301, suchitra-shelke]
+  - path: payments/
+    component: Payments
+    team: Payments Team
+    owners: [suchitra-shelke]
+risk_weights:
+  auth_crypto: 30
+  payment_billing: 30
+  sensitive_files: 25
+  db_schema: 20
+  ci_failing: 20
+  pr_overlap: 20
+  dependency_build: 15
+  no_tests: 15
+  large_file_count: 10
+  large_line_count: 10
+  no_codeowner: 10
+review_policy:
+  security_review_required_above_score: 50
+  stale_after_hours: 48
+cleanup:
+  threshold_days: 7
+  exclusions: ["release/*", "hotfix/*", "support/*", "backport/*", "rc/*"]
+  require_approval: true

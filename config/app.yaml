@@ -1,0 +1,2 @@
+service: demo
+log_level: info
